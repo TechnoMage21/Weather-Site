@@ -13,29 +13,29 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(45deg, #000000, #1d9ffc);
+  background: linear-gradient(45deg, #4B0082, #00CED1);
   animation: gradientAnimation 5s infinite alternate;
 }
 
 /* Background gradient animation */
 @keyframes gradientAnimation {
   0% {
-    background: linear-gradient(45deg, #000000, #1d9ffc);
+    background: linear-gradient(45deg, #4B0082, #00CED1);
   }
   100% {
-    background: linear-gradient(45deg, #1d9ffc, #000000);
+    background: linear-gradient(45deg, #00CED1, #4B0082);
   }
 }
 
 ::selection {
   color: #fff;
-  background: #43AFFC;
+  background: #FF007F;
 }
 
 .wrapper {
   width: 378px;
   height: 375px;
-  background: rgba(0, 0, 0, 0.34);
+  background: rgba(75, 0, 130, 0.34);
   border-radius: 46px;
   box-shadow: 0px 7px 79px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -49,10 +49,10 @@ body {
 .wrapper header {
   font-size: 27px;
   font-weight: 500;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 26px 11px;
   align-items: center;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #B0B0B0;
   margin-left: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -60,7 +60,7 @@ body {
 }
 
 header:hover {
-  color: #43affc;
+  color: #FF007F;
 }
 
 header i {
@@ -126,24 +126,24 @@ header:hover i {
 .input-part input {
   text-align: center;
   padding: 0 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #B0B0B0;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input-part input:is(:focus, :valid) {
-  border: 2px solid #43AFFC;
-  box-shadow: 0 0 10px rgba(67, 175, 252, 0.5);
+  border: 2px solid #FF007F;
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
 }
 
 .input-part input::placeholder {
-  color: #bfbfbf;
+  color: #B0B0B0;
 }
 
 .input-part .separator {
   height: 1px;
   width: 100%;
   margin: 25px 0;
-  background: #ccc;
+  background: #B0B0B0;
   position: relative;
   display: flex;
   align-items: center;
@@ -152,7 +152,7 @@ header:hover i {
 
 .separator::before {
   content: "or";
-  color: #b3b3b3;
+  color: #B0B0B0;
   font-size: 19px;
   padding: 0 15px;
   background: #fff;
@@ -161,13 +161,13 @@ header:hover i {
 .input-part button {
   color: #fff;
   cursor: pointer;
-  background: #43AFFC;
+  background: #FF007F;
   transition: 0.3s ease;
   transform: scale(1);
 }
 
 .input-part button:hover {
-  background: #1d9ffc;
+  background: #FF00A6;
   transform: scale(1.05);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -178,7 +178,7 @@ header:hover i {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #bee5eb;
+  background-color: rgba(0, 206, 209, 0.7);
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
@@ -255,14 +255,14 @@ header:hover i {
 }
 
 .weather-part .location:hover {
-  color: #43affc;
+  color: #FF007F;
 }
 
 .weather-part .bottom-details {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #B0B0B0;
   opacity: 0;
   animation: fadeInUp 0.5s 0.3s forwards;
 }
@@ -287,12 +287,12 @@ header:hover i {
 }
 
 .column i {
-  color: #5DBBFF;
+  color: #00CED1;
   font-size: 40px;
 }
 
 .column.humidity {
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #B0B0B0;
 }
 
 .column .details {
@@ -320,4 +320,3 @@ header:hover i {
 .humidity i {
   font-size: 37px;
 }
-
